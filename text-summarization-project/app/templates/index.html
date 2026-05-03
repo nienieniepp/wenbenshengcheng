@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Summarization Demo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Transformer News Summarization Demo</h1>
+    <p><strong>Model:</strong> {{ model_name }}</p>
+
+    <form method="post">
+      <textarea name="article" rows="14" placeholder="Paste a long news article here...">{{ article }}</textarea>
+      <button type="submit">Generate Summary</button>
+    </form>
+
+    {% if error %}
+      <div class="error">{{ error }}</div>
+    {% endif %}
+
+    {% if summary %}
+      <h2>Generated Summary</h2>
+      <div class="summary">{{ summary }}</div>
+      <p>Original word count: {{ original_wc }} | Summary word count: {{ summary_wc }}</p>
+    {% endif %}
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+button {
+  background: #1f77b4;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.summary {
+  background: #eef7ff;
+  border-left: 4px solid #1f77b4;
+  padding: 10px;
+}
+.error {
+  color: #b00020;
+  margin-top: 10px;
+}

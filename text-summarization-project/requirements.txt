@@ -1,0 +1,12 @@
+datasets
+transformers
+torch
+evaluate
+rouge_score
+scikit-learn
+pandas
+numpy
+matplotlib
+flask
+tqdm
+sentencepiece

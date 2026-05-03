@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data and models
+data/processed/
+models/t5_summarizer/
+*.pt
+*.bin
+*.safetensors
+
+# Results artifacts
+results/figures/*.png
+
+# OS files
+.DS_Store
+Thumbs.db
